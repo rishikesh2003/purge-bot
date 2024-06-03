@@ -19,7 +19,7 @@ async def purge(ctx, channel: discord.TextChannel):
     for message in messages:
         await message.delete()
         await asyncio.sleep(0.5)
-    print("Purging done.")# sleep for 1 second to avoid rate limits
+    print("Purging done.")
 
 
 bot.run(os.getenv('DISCORD_BOT_TOKEN'))
